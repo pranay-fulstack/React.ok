@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Click from './Click';
 
 export class Counter extends Component {
     constructor(props) {
@@ -8,17 +9,26 @@ export class Counter extends Component {
              count:0
         };
     };
+    a="pranay";
     IncrementCount=()=>{
         this.setState({count:this.state.count +1});
     };
+    DecrementCount=()=>{
+        this.setState({
+            count: this.state.count-1
+        });
+    };
     render() {
     
-        const {count} = this.state;
-        return (
+        
+        return <>
             <div>
-                <button onMouseEnter={this.IncrementCount}>incremented to x</button>
+            <h1>Count No:{this.state.count}</h1>
+                <button onClick={this.IncrementCount}>incremented to x</button>
+                <button onClick={this.DecrementCount}>decremented to x</button>
             </div>
-        )
+            <Click name={this.a} />
+        </>
     };
 }
 

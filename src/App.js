@@ -1,7 +1,7 @@
  import React from 'react'
  import Pranay1 from "./Components/Pranay1";
  import {Pranay2,Pranay3 }from "./Components/Pranay2";
- import Click from "./Components/Click";
+
  import Counter from "./Components/Counter";
  function App () {
      return (
@@ -11,7 +11,7 @@
              <Pranay1/>
              <Pranay2/>
              <Pranay3/>
-             <Click/>
+            
              <Counter/>
          </div>    
          
