@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+ import React from 'react'
+ import Pranay1 from "./Components/Pranay1";
+ import {Pranay2,Pranay3 }from "./Components/Pranay2";
+ import Click from "./Components/Click";
+ import Counter from "./Components/Counter";
+ function App () {
+     return (
+         <div>
+             <h1>Hello Welcome pvp.</h1>,
+             <p>Hello Welcom to Bnglr Market.</p>
+             <Pranay1/>
+             <Pranay2/>
+             <Pranay3/>
+             <Click/>
+             <Counter/>
+         </div>    
+         
+     );
+ };
+ 
+ export default App;
+ 
