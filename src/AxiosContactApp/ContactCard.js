@@ -39,8 +39,7 @@ class ContactCard extends React.Component {
             </div>
           </div>
         ) : (
-          "null"
-        )}
+          "null")}
       </>
     );
   }

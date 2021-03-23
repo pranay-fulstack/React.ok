@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
+import React,{Component} from 'react';
 
-class ContactList extends Component {
+class ContactList extends Component{
     pushData=(contact)=>{
         this.props.pullData(contact);
     };
-    render() {
-        return<>
-        <h1>ContactList component</h1>
+    render(){
+        return <>
         <div className="container">
         <div className="row">
         <div className="col">
         <table className="table table-hover table-striped">
         <thead className="bg-primary">
         <tr>
-        <th>ID</th>
+        <th>Id</th>
         <th>Name</th>
         <th>Age</th>
         <th>Email</th>
@@ -30,6 +29,7 @@ class ContactList extends Component {
                         <td>{contact.name.last}</td>
                         <td>{contact.dob.age}</td>
                         <td>{contact.email}</td>
+                        
                         </tr>
                     )
                 })}
@@ -43,5 +43,4 @@ class ContactList extends Component {
         </>
     }
 }
-
 export default ContactList;

@@ -9,10 +9,11 @@ class ContactApp extends Component {
         this.state={
             contacts: null,
             selectedContact: null,
-            errorMessage: null,
+            errMessage: null,
         }
     }
     pullData=(contact)=>{
+        console.log("indise:", contact);
         this.setState({
             selectedContact: contact,
         })
@@ -46,7 +47,7 @@ class ContactApp extends Component {
         </div>
         <div className="container">
         <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-4">
         <ContactList contactData={this.state.contacts} pullData={this.pullData} />
         </div>
         <div className="col-md-4">
