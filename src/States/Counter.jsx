@@ -1,5 +1,6 @@
 import React from "react";
 import Message from "./Message"
+
 class Counter extends React.Component{
     constructor(){
         super();
@@ -16,6 +17,7 @@ class Counter extends React.Component{
     render(){
         return(
             <>
+   
             <h1>{this.state.counter}</h1>
             <button className="btn btn-primary" 
             onClick={this.incrementCounter} >Press</button>
