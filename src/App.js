@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import One from "./StateBinding/One";
+/*import Login2 from "./FormHandling/Login2";
+import Login from "./FormHandling/Login";*/
+import SignIn from "./FormHandling/SignIn";
 export class App extends Component {
     render() {
         return (
@@ -9,7 +11,8 @@ export class App extends Component {
             <a href="/">Hello Pranay</a>
             </nav> 
             </div>
-            <One/>
+            
+            <SignIn/>
             </>
         )
     }
